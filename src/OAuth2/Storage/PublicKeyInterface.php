@@ -10,6 +10,7 @@ namespace OAuth2\Storage;
  */
 interface PublicKeyInterface
 {
+    public function getKeyId($client_id = null);
     public function getPublicKey($client_id = null);
     public function getPrivateKey($client_id = null);
     public function getEncryptionAlgorithm($client_id = null);

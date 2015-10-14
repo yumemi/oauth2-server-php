@@ -466,4 +466,8 @@ class Cassandra implements AuthorizationCodeInterface,
         return $userClaims;
     }
 
+    public function getKeyId($client_id = null)
+    {
+        // TODO: Implement getKeyId() method.
+    }
 }

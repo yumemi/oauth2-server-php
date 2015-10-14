@@ -525,4 +525,9 @@ class DynamoDB implements
 
         return $result;
     }
+
+    public function getKeyId($client_id = null)
+    {
+        // TODO: Implement getKeyId() method.
+    }
 }

@@ -366,4 +366,18 @@ class Memory implements AuthorizationCodeInterface,
 
         return 'RS256';
     }
+
+    public function getKeyId($client_id = null)
+    {
+        if (isset($this->keys[$client_id])) {
+            return $this->keys[$client_id]['key_id'];
+        }
+
+        // use a global encryption pair
+        if (isset($this->keys['key_id'])) {
+            return $this->keys['key_id'];
+        }
+
+        return null;
+    }
 }

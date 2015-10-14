@@ -453,6 +453,11 @@ class Pdo implements
         return 'RS256';
     }
 
+    public function getKeyId($client_id = null)
+    {
+        // TODO: Implement getKeyId() method.
+    }
+
     /**
      * DDL to create OAuth2 database and tables for PDO storage
      *
@@ -540,4 +545,5 @@ class Pdo implements
 
         return $sql;
     }
+
 }
